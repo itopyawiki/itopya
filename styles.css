@@ -24,6 +24,7 @@ header {
 
 nav ul {
     list-style: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -37,8 +38,10 @@ nav ul li a {
     font-weight: bold;
 }
 
-h1 {
-    font-size: 2.5em;
+.logo {
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+    margin-top: 20px;
 }
 
 /* Sections */
@@ -47,16 +50,30 @@ section {
     text-align: center;
 }
 
-#about {
-    background: #e2e2e2;
+/* Section colors */
+#kimiz {
+    background: navy;
+    color: white;
 }
 
-#services {
-    background: #ddd;
+#magazalar {
+    background: white;
+    color: black;
 }
 
-#contact {
-    background: #e2e2e2;
+#website {
+    background: darkgray;
+    color: white;
+}
+
+#etkinlikler {
+    background: white;
+    color: black;
+}
+
+#marketing {
+    background: navy;
+    color: white;
 }
 
 /* Footer */
@@ -78,7 +95,7 @@ footer {
         margin: 10px 0;
     }
 
-    header h1 {
-        font-size: 2em;
+    header .logo {
+        max-width: 150px; /* Adjust as needed */
     }
 }
