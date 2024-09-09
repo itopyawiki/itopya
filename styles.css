@@ -109,33 +109,35 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
-
 .bubble-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns per row */
-    grid-gap: 10px; /* Space between bubbles */
-    justify-content: center; /* Center grid horizontally */
+    grid-template-columns: repeat(2, 1fr); /* Two columns for the first two rows */
+    grid-template-rows: repeat(2, auto) auto; /* Two rows plus one row for the last bubble */
+    gap: 20px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Bubble Styling */
+/* Style for each Bubble */
 .bubble {
-    background: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
-    color: navy;
-    padding: 15px;
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    aspect-ratio: 1 / 1; /* Make bubbles closer to a square */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: rgba(0, 0, 128, 0.5); /* Navy background with 50% opacity */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    max-width: 150px; /* Fixed width for bubbles */
-    max-height: 150px; /* Fixed height for bubbles */
-    overflow: hidden; /* Hide overflow if content exceeds bubble */
-    font-size: 14px; /* Adjust font size to fit text within bubble */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 16px;
+    /* Ensure bubbles are responsive and scale down nicely */
+    box-sizing: border-box;
 }
+
+/* Ensure the last bubble takes the full width in the last row */
+.bubble:nth-child(5) {
+    grid-column: span 2;
+}
+
+
+/* Bubble Styling */
+
 
 .store-grid {
     display: grid;
