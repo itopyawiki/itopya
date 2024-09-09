@@ -12,19 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
 
-// Show or hide the return-to-top button based on scroll position
-window.addEventListener('scroll', () => {
-    const button = document.querySelector('.return-to-top');
-    if (window.scrollY > 300) { // Show button if scrolled more than 300px
-        button.classList.add('show');
-    } else {
-        button.classList.remove('show');
-    }
-});
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
