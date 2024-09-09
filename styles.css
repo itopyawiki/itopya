@@ -233,6 +233,40 @@ footer {
     background-color: orange; /* Change color on hover */
 }
 
+#videos {
+    padding: 60px 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between videos */
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.video-item {
+    background-color: white; /* White background for video items */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+    overflow: hidden; /* Ensure the border radius is respected */
+}
+
+.video-item iframe {
+    width: 100%; /* Make the iframe take the full width of its container */
+    height: 200px; /* Fixed height for iframes; adjust as needed */
+    display: block;
+}
+
+.video-item p {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fafafa; /* Slightly different background for the text area */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .store-grid {
