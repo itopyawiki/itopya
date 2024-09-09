@@ -25,17 +25,29 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Center nav items horizontally */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 10px; /* Adjust spacing between items */
 }
 
 nav ul li a {
-    color: #f07d00;
+    display: block;
+    padding: 10px 20px;
+    background: white;
+    color: navy;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 8px; /* Add border radius */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for background and hover effect */
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.9); /* Slightly fade the background on hover */
+    transform: scale(1.05); /* Slightly scale up the item on hover */
 }
 
 .logo {
