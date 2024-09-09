@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background: #00273a;
+    background: white;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -33,7 +33,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: orange;
+    color: #f07d00;
     text-decoration: none;
     font-weight: bold;
 }
@@ -52,27 +52,27 @@ section {
 
 /* Section colors */
 #kimiz {
-    background: navy;
+    background: #00273a;
     color: white;
 }
 
 #magazalar {
-    background: white;
+    background: #f07d00;
     color: black;
 }
 
 #website {
-    background: darkgray;
+    background: white;
     color: white;
 }
 
 #etkinlikler {
-    background: white;
+    background: #00273a;
     color: black;
 }
 
 #marketing {
-    background: navy;
+    background: #f07d00;
     color: white;
 }
 
