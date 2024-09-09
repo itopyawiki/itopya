@@ -11,3 +11,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Show or hide the return-to-top button based on scroll position
+window.addEventListener('scroll', () => {
+    const button = document.querySelector('.return-to-top');
+    if (window.scrollY > 300) { // Show button if scrolled more than 300px
+        button.classList.add('show');
+    } else {
+        button.classList.remove('show');
+    }
+});
