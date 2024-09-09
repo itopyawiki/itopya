@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
 let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
