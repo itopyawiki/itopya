@@ -113,22 +113,28 @@ footer {
 .bubble-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns per row */
-    grid-gap: 20px; /* Space between bubbles */
+    grid-gap: 10px; /* Space between bubbles */
     justify-content: center; /* Center grid horizontally */
+    margin: 0 auto;
 }
 
 /* Bubble Styling */
 .bubble {
     background: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
     color: navy;
-    padding: 20px;
-    border-radius: 15px; /* Rounded corners */
+    padding: 15px;
+    border-radius: 12px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     aspect-ratio: 1 / 1; /* Make bubbles closer to a square */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-width: 150px; /* Fixed width for bubbles */
+    max-height: 150px; /* Fixed height for bubbles */
+    overflow: hidden; /* Hide overflow if content exceeds bubble */
+    font-size: 14px; /* Adjust font size to fit text within bubble */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .store-grid {
@@ -195,8 +201,8 @@ footer {
 
 @media (max-width: 480px) {
     .bubble {
-        font-size: 14px; /* Smaller text on very small screens */
-        padding: 15px;
+        font-size: 12px; /* Smaller text on very small screens */
+        padding: 10px;
     }
 }
 
