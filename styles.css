@@ -51,9 +51,10 @@ nav ul li a:hover {
 }
 
 .logo {
-    max-width: 200px; /* Adjust as needed */
+    max-width: 300px;
     height: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Sections */
