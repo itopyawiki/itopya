@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background: white;
+    background: #00273a;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -52,27 +52,27 @@ section {
 
 /* Section colors */
 #kimiz {
-    background: #00273a;
-    color: white;
+    background: white;
+    color: black;
 }
 
 #magazalar {
     background: #f07d00;
-    color: black;
+    color: white;
 }
 
 #website {
-    background: white;
+    background: #00273a;
     color: white;
 }
 
 #etkinlikler {
-    background: #00273a;
+    background: white;
     color: black;
 }
 
 #marketing {
-    background: #f07d00;
+    background: #00273a;
     color: white;
 }
 
@@ -85,8 +85,8 @@ section {
 
 /* Footer */
 footer {
-    background: navy;
-    color: white;
+    background: white;
+    color: black;
     padding: 20px 0;
     text-align: center;
 }
