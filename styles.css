@@ -64,8 +64,8 @@ section {
 
 /* Section colors */
 #kimiz {
-    background: white;
-    color: black;
+    background: #00273a;
+    color: white;
 }
 
 #magazalar {
@@ -86,6 +86,13 @@ section {
 #marketing {
     background: #f07d00;
     color: white;
+}
+
+.center-image {
+    max-width: 100%; /* Ensure the image scales with the container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Space above and below the image */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
 }
 
 /* Container styling */
