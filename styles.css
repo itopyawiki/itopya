@@ -131,6 +131,61 @@ footer {
     text-align: center;
 }
 
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for the first 4 stores */
+    grid-gap: 20px; /* Space between stores */
+    justify-content: center; /* Center grid horizontally */
+}
+
+/* Individual Store Styling */
+.store {
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    color: navy;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    text-align: center;
+}
+
+.store-images {
+    display: flex;
+    gap: 10px; /* Space between images */
+    margin-top: 10px;
+    justify-content: center; /* Center images horizontally */
+}
+
+.store-images img {
+    max-width: 100%; /* Ensure images are responsive */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Large Store (Store 5) */
+.store-large {
+    grid-column: span 2; /* Make Store 5 span both columns */
+}
+
+.store-images-large {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for images */
+    grid-gap: 10px; /* Space between images */
+}
+
+.store-images-large img {
+    width: 100%; /* Make images responsive within grid */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .store-grid {
+        grid-template-columns: 1fr; /* Stack stores vertically on smaller screens */
+    }
+
+    .store-large {
+        grid-column: span 1; /* Store 5 will stack with other stores */
+    }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .bubble-container {
