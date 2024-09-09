@@ -76,6 +76,13 @@ section {
     color: white;
 }
 
+/* Container styling */
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Footer */
 footer {
     background: navy;
