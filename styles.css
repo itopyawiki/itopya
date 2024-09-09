@@ -152,18 +152,24 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 20px;
     text-align: center;
+    margin-bottom: 40px;
+
 }
 
 .store-images {
     display: flex;
     gap: 10px; /* Space between images */
+    flex-wrap:wrap;
     margin-top: 10px;
     justify-content: center; /* Center images horizontally */
 }
 
 .store-images img {
-    max-width: 100%; /* Ensure images are responsive */
     border-radius: 8px; /* Rounded corners for images */
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    height: auto;
+    object-fit: cover;
 }
 
 /* Large Store (Store 5) */
@@ -181,6 +187,17 @@ footer {
     width: 100%; /* Make images responsive within grid */
     border-radius: 8px; /* Rounded corners for images */
 }
+
+.store-large .store-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.store-large .store-images img {
+    width: 100%;
+}
+
 
 .return-to-top {
     position: fixed;
